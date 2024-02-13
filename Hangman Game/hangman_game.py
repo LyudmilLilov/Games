@@ -9,7 +9,13 @@ def choose_word():
 
 # Function to display the current state of the word with blanks
 def display_word(word, guessed_letters):
-    pass
+    display = ""
+    for letter in word:
+        if letter in guessed_letters:
+            display += letter
+        else:
+            display += "_"
+    return display
 
 # Function to play Hangman
 def play_hangman():

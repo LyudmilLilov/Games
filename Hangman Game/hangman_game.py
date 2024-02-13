@@ -5,7 +5,7 @@ words = ["python", "hangman", "computer", "programming", "challenge"]
 
 # Function to choose a random word
 def choose_word():
-    pass
+    return random.choice(words)
 
 # Function to display the current state of the word with blanks
 def display_word(word, guessed_letters):

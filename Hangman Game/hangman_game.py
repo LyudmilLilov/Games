@@ -19,7 +19,9 @@ def display_word(word, guessed_letters):
 
 # Function to play Hangman
 def play_hangman():
-    pass
+    word_to_guess = choose_word()
+    guessed_letters = []
+    attempts = 6
 
     print("Welcome to Hangman!")
 
